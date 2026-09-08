@@ -1,1 +1,20 @@
-# Tamaserviceroblox
+# TAMA Recovery v8
+
+Website recovery Roblox sederhana untuk Vercel.
+
+## Fitur
+- Lookup username Roblox melalui endpoint `/api/roblox`.
+- Status profil hanya ditampilkan sebagai **Online** atau **Offline**.
+- Banner TAMA Store di halaman utama.
+- Form bantuan recovery yang mengarahkan pengguna ke WhatsApp.
+- Tidak ada halaman Robux, top up, QRIS, metode pembayaran, atau upload bukti pembayaran.
+
+## Deploy Vercel
+Upload isi folder ini ke root repository, lalu import repository tersebut ke Vercel. Tidak diperlukan `vercel.json`.
+
+
+## v9 UI update
+- Banner TAMA ditampilkan proporsional tanpa crop.
+- Tombol recovery WhatsApp dibuat lebih rapi.
+- Menambahkan statistik 5.000+ pengunjung, 1.873 pesanan, dan layanan 24/7.
+- Menghapus aset QRIS yang sudah tidak digunakan.
