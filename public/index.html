@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7c3aed">
+  <title>Jasa Pemulihan Akun Roblox • Rp25.000</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span class="brand-dot"></span>TAMA <b>Recovery</b></a>
+    <nav>
+      <a href="#recovery">Recovery</a>
+    </nav>
+    <a class="wa-mini" href="https://wa.me/62895391845923" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">JASA PEMULIHAN AKUN ROBLOX</span>
+        <h1>Jasa Pemulihan Akun Roblox — Rp25.000</h1>
+        <p>Bantuan untuk memulihkan akun Roblox yang diretas, tidak bisa login, lupa password, atau mengalami masalah akses. Isi data singkat dan lanjutkan konsultasi melalui WhatsApp.</p>
+        <div class="hero-actions">
+          <button id="orderRecovery" class="btn primary" type="button">Order Jasa Pemulihan Akun</button>
+        </div>
+      </div>
+      <div class="hero-art product-art">
+        <img src="/media/jasa-pemulihan-roblox.png" alt="Jasa Pemulihan Akun Roblox Rp25.000">
+      </div>
+    </section>
+
+    <section class="product-info" aria-label="Detail produk">
+      <div class="product-copy">
+        <span class="eyebrow">PRODUK</span>
+        <h2>Jasa Pemulihan Akun Roblox</h2>
+        <p>Bantuan pemulihan akun Roblox dengan proses yang mudah. Cukup cari username akun, pilih masalah, jelaskan kronologi, lalu lanjutkan data pesanan ke WhatsApp.</p>
+        <div class="product-points">
+          <span>✓ Pemulihan akun diretas / hilang</span>
+          <span>✓ Bantuan akun tidak bisa login</span>
+          <span>✓ Konsultasi melalui WhatsApp</span>
+          <span>✓ Harga hanya Rp25.000</span>
+        </div>
+      </div>
+      <div class="product-price">
+        <small>HARGA</small>
+        <strong>Rp25.000</strong>
+        <button id="orderRecovery2" class="btn primary" type="button">Order Jasa Pemulihan Akun</button>
+      </div>
+    </section>
+
+    <section class="section" id="recovery">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">FORM ORDER</span>
+          <h2>Order Jasa Pemulihan</h2>
+          <p>Cari username Roblox terlebih dahulu, kemudian lengkapi masalah, kronologi, dan sudah berapa lama akun mengalami masalah.</p>
+        </div>
+      </div>
+
+      <div class="lookup-card">
+        <div class="step-label"><span>1</span> Cari Username Roblox</div>
+        <form id="lookupForm" class="lookup-form">
+          <div class="input-wrap">
+            <span>@</span>
+            <input id="usernameInput" name="username" autocomplete="off" placeholder="Cari username Roblox" maxlength="20" required>
+          </div>
+          <button class="btn primary" type="submit">Cari Username</button>
+        </form>
+
+        <div id="lookupLoading" class="loading hidden">
+          <div class="spinner"></div>
+          <div><b>Mencari username...</b><small>Memeriksa profil Roblox.</small></div>
+        </div>
+
+        <div id="lookupError" class="error hidden"></div>
+
+        <article id="profileCard" class="profile hidden">
+          <div class="profile-main">
+            <img id="avatar" class="avatar" alt="Avatar Roblox">
+            <div>
+              <div class="profile-title"><span id="displayName">-</span><span id="presenceBadge" class="status offline">Offline</span></div>
+              <div id="usernameText" class="muted">@username</div>
+              <div class="profile-id">User ID: <span id="userId">-</span></div>
+            </div>
+          </div>
+          <div class="profile-grid">
+            <div><span>Status</span><b id="statusText">Offline</b></div>
+            <div><span>Akun</span><b id="banText">Normal</b></div>
+            <div><span>Dibuat</span><b id="createdText">-</b></div>
+          </div>
+          <button id="recoverBtn" class="btn primary" type="button">Lanjut Isi Data Pemulihan</button>
+        </article>
+
+        <div id="recoveryForm" class="recovery-form hidden">
+          <div class="step-label"><span>2</span> Detail Masalah Akun</div>
+          <div class="form-grid">
+            <label>Username<input id="recoveryUsername" readonly></label>
+            <label>Masalah<select id="problem">
+              <option value="Akun diretas">Akun diretas</option>
+              <option value="Lupa password">Lupa password</option>
+              <option value="Email/nomor tidak bisa diakses">Email/nomor tidak bisa diakses</option>
+              <option value="Tidak bisa login">Tidak bisa login</option>
+              <option value="Akun terkena moderasi/ban">Akun terkena moderasi/ban</option>
+            </select></label>
+            <label>Sudah berapa lama?<select id="duration">
+              <option>Baru terjadi hari ini</option>
+              <option>1–3 hari</option>
+              <option>4–7 hari</option>
+              <option>1–4 minggu</option>
+              <option>Lebih dari 1 bulan</option>
+            </select></label>
+          </div>
+          <label>Kronologi<textarea id="story" rows="5" placeholder="Ceritakan kronologi masalah akun secara singkat..."></textarea></label>
+          <button id="sendRecovery" class="btn wa-btn" type="button">Lanjutkan via WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>TAMA Recovery</b><span>Roblox Recovery Service</span></div>
+    <a href="https://wa.me/62895391845923" target="_blank" rel="noopener">WhatsApp 0895391845923</a>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
